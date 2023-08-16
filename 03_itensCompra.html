@@ -8,11 +8,27 @@
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
     //ENTRADA
-
+    const fruta1 = prompt("me diga uma fruta").trim();   
+    const fruta2 = prompt("me diga uma fruta").trim();
+    const fruta3 = prompt("me diga uma fruta").trim();
+    const bebida1 = prompt("me diga uma bebida").trim();    
+    const bebida2 = prompt("me diga uma bebida").trim();
+    const bebida3 = prompt("me diga uma bebida").trim();    
 
     //PROCESSAMENTO
+    let fruta = [];
+    let bebida = [];
 
+    if(!isNaN(fruta1) || !isNaN(fruta2) || !isNaN(fruta3) || !isNaN(bebida1) || !isNaN(bebida2) || !isNaN(bebida3)){
+        alert("resposta invalida").stop();
+    }
+
+    else{
+        fruta = [fruta1, fruta2, fruta3];
+        bebida = [bebida1, bebida2, bebida3];
+    }
 
     //SAÍDA
 
+    alert(`A lista completa de compras é: ${fruta.join(",")}, ${bebida.join(",")}.`)
 </script>

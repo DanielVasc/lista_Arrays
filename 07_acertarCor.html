@@ -1,7 +1,7 @@
 <script>
     //Problema: Acertar cor
     //Crie o seguinte array, que contém sete elementos:
-    // const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    // const nomeCores = ["PRETO", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
     //Peça para o usuário informar uma cor.
     //Faça o programa armazenar um número aleatório (entre 0 e 6).
     //Caso o usuário acerte a cor, que está na posição do array que coincide com o número aleatório gerado pelo computador, o programa deverá retornar:
@@ -10,9 +10,82 @@
     //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
 
     //ENTRADA
+    const nomeCores = ["PRETO", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const kayke = prompt("escolha uma cor entre: PRETO, amarelo, verde, branco, preto, marrom, cinza").trim().toUpperCase();
 
+    let luis = Math.floor(Math.random() * 7);
 
     //PROCESSAMENTO
+    if(kayke == "PRETO"){
+        if(luis === 0){
+        
+            alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${nomeCores[0]}`)
+        }
+        else{
+            alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+        }
+    }
+
+    if(kayke == "AMARELO"){
+        if(luis === 1){
+        
+            alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${nomeCores[1]}`)
+        }
+        else{
+            alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+        }
+    }
+
+    if(kayke == "VERDE"){
+        if(luis === 2){
+        
+            alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${nomeCores[2]}`)
+        }
+        else{
+            alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+        }
+    }
+
+    if(kayke == "BRANCO"){
+        if(luis === 3){
+        
+            alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${nomeCores[3]}`)
+        }
+        else{
+            alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+        }
+    }
+
+    if(kayke == "PRETO"){
+        if(luis === 4){
+        
+            alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${nomeCores[4]}`)
+        }
+        else{
+            alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+        }
+    }
+
+    if(kayke == "MARROM"){
+        if(luis === 5){
+        
+            alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${nomeCores[5]}`)
+        }
+        else{
+            alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+        }
+    }
+
+    if(kayke == "CINZA"){
+        if(luis === 6){
+        
+            alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${nomeCores[6]}`)
+        }
+        else{
+            alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+        }
+    }
+
 
 
     //SAÍDA

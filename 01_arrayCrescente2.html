@@ -4,11 +4,21 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
+    let num1 = Number(prompt("me diga um numero").trim());
+    let num2 = Number(prompt("me diga um numero").trim());
 
 
     //PROCESSAMENTO
-
+    let crescente = [];
 
     //SAÍDA
+    if(num1 > num2){
+        crescente = [num2, num1];
+    }
+
+    else{
+        crescente = [num1,num2];
+    }
     
+    alert(`os elementos do array são: ${crescente.join("-")}.`);
 </script>

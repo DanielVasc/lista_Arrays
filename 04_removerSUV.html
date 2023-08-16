@@ -6,11 +6,39 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
 
     //ENTRADA
-
+    const remover = prompt("qual carro deseja REMOVER da lista: TI-Tiggo, SP-Sportage, TU-Tucson, EC-EcoSport").trim().toUpperCase();
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const guarda = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 
     //PROCESSAMENTO
+    if (remover.length > 2) {
+        alert("valor incorreto seu BOSSAL")
+    }
+    else {
+        if (remover == "TI") {
+            carrosSUV.splice(0, 1);
+        }
+
+        else if (remover == "SP") {
+            carrosSUV.splice(1, 1);
+        }
+
+        else if (remover == "TU") {
+            carrosSUV.splice(2, 1);
+        }
+
+        else if (remover == "EC") {
+            carrosSUV.splice(3, 1);
+        }
+
+        else {
+            alert("valor incorreto seu BOSSAL")
+
+        }
+    }
 
 
     //SAÍDA
+    alert(`a lista antiga é ${guarda.join(",")} e a nova fica ${carrosSUV.join(",")}`);
 
 </script>
